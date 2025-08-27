@@ -34,6 +34,7 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  height: 100vh;
 }
 
 img,
@@ -78,3 +79,92 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* HEADER SECTION START */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 20px;
+  height: 25vh;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right-element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5em;
+  padding: 10px 10px;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+/* HEADER SECTION END */
+
+/* MAIN CONTENT START */
+main {
+background-color: var(--secondary);
+height: 75vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1em;
+}
+
+.form {
+ display: flex;
+ gap: 0.5em;
+ align-items: center;
+ justify-content: center;
+ padding-top: 5vh;
+}
+
+.form-input {
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 250px;
+  height: 2em;
+  background-color: var(--primary);
+  color: white;
+}
+
+.form-btn {
+  background-color: var(--primary);
+  padding: 0.25em;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(212, 216, 219);
+}
+
+.form-btn:hover {
+  background: #af8bf2;
+}
+
+::placeholder {
+  color: rgb(212, 216, 219);
+  text-align: center;
+}
+/* MAIN CONTENT END */
