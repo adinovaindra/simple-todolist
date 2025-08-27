@@ -1,3 +1,4 @@
+// script prompt nama start
 let nama = prompt("Hello, please tell me who you are :")
 
 function cekValidNama() {
@@ -27,3 +28,17 @@ if (totalHours >= 240 && totalHours <= 659) {
 } else {
     document.getElementById("greeting").innerHTML=`Good Evening, ${cekValidNama()}`
 }
+// script prompt nama end
+
+// script date start
+const now = new Date()
+const fullDate = new Intl.DateTimeFormat("en-UK", {day: "numeric", month: "long", year: "numeric"}).format(now)
+const fullDay = new Intl.DateTimeFormat("en-US", {weekday: "long"}).format(now)
+
+document.getElementById("date").innerHTML = `${fullDay}, ${fullDate}`
+// script date end
+
+// script time start
+const fullTime = new Intl.DateTimeFormat("en-US", {timeStyle:"long"}).format(now)
+document.getElementById('time').innerHTML = fullTime
+// script time end
