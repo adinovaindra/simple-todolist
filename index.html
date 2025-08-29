@@ -34,30 +34,36 @@
           <p id="weather"></p>
           <i data-feather="thermometer"></i>
         </div>
-      </div>  
+      </div>
     </header>
     <!-- Header End -->
 
     <!-- Main Content Start -->
-     <main>
-      <form id="todo-form" class="form">
-        <input 
-        type="text"
-        id="todo-input"
-        placeholder="What do you want to do?" 
-        class="form-input"
-        required
-        />
-        <button type="submit" class="form-btn">
-          Add
-        </i></button>
-      </form>
+    <main>
+      <!-- Section Add Task Start -->
+      <section class="add-task">
+        <form id="todo-form" class="form">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="What do you want to do?"
+            class="form-input"
+            required
+          />
+          <button type="submit" class="form-btn">Add</button>
+        </form>
 
-      <ul id="todo-list"></ul>
-     </main>
-     <!-- Main Content End -->
+        <ul id="todo-list"></ul>
+      </section>
+      <!-- Section Add Task End -->
+      <!-- Section Done Task Start -->
+      <section class="done-task">
+        <ul id="todo-list-done"></ul>
+      </section>
+      <!-- Section Done Task Start -->
+    </main>
+    <!-- Main Content End -->
 
-    
     <script src="script.js"></script>
   </body>
 </html>

@@ -108,6 +108,7 @@ function addInput(event) {
     const deleteButton = document.createElement('button')
     deleteButton.textContent = "Delete"
     deleteButton.type = "button"
+    deleteButton.className = "del-btn"
     deleteButton.addEventListener("click", () => li.remove())
 
     li.appendChild(deleteButton)
